@@ -44,8 +44,19 @@
 		  console.log('resultado', response);
 		}
 	
-		fetchData();
+		//fetchData();
 	  </script>
+	<style>
+		.reference-image {
+		margin-top: 20px;
+	}
+	.reference-image img {
+		max-width: 100%;
+		height: 64px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	</style>
 </head>
 <body>
 	<!-- Notifications area -->
@@ -147,93 +158,25 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="#!" class="full-width btn-subMenu">
+						<a href="categories.html" class="full-width">
 							<div class="navLateral-body-cl">
-								<i class="zmdi zmdi-case"></i>
+								<i class="zmdi zmdi-label"></i>
 							</div>
 							<div class="navLateral-body-cr">
-								ADMINISTRATION
+								CATEGORÍA
 							</div>
-							<span class="zmdi zmdi-chevron-left"></span>
 						</a>
-						<ul class="full-width menu-principal sub-menu-options">
-							<li class="full-width">
-								<a href="company.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-balance"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										COMPANY
-									</div>
-								</a>
-							</li>
-							<li class="full-width">
-								<a href="providers.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-truck"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										PROVIDERS
-									</div>
-								</a>
-							</li>
-							<li class="full-width">
-								<a href="payments.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-card"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										PAYMENTS
-									</div>
-								</a>
-							</li>
-							<li class="full-width">
-								<a href="categories.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-label"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										CATEGORIES
-									</div>
-								</a>
-							</li>
-						</ul>
 					</li>
-					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="#!" class="full-width btn-subMenu">
+						<a href="payments.html" class="full-width">
 							<div class="navLateral-body-cl">
-								<i class="zmdi zmdi-face"></i>
+								<i class="zmdi zmdi-label"></i>
 							</div>
 							<div class="navLateral-body-cr">
-								USERS
+								MARCA
 							</div>
-							<span class="zmdi zmdi-chevron-left"></span>
 						</a>
-						<ul class="full-width menu-principal sub-menu-options">
-							<li class="full-width">
-								<a href="admin.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-account"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										ADMINISTRATORS
-									</div>
-								</a>
-							</li>
-							<li class="full-width">
-								<a href="client.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-accounts"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										CLIENT
-									</div>
-								</a>
-							</li>
-						</ul>
 					</li>
-					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
 						<a href="products.html" class="full-width">
 							<div class="navLateral-body-cl">
@@ -246,12 +189,12 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="sales.html" class="full-width">
+						<a href="providers.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-shopping-cart"></i>
 							</div>
 							<div class="navLateral-body-cr">
-								SALES
+								DETALLE INVENTARIO
 							</div>
 						</a>
 					</li>
@@ -262,43 +205,9 @@
 								<i class="zmdi zmdi-store"></i>
 							</div>
 							<div class="navLateral-body-cr">
-								INVENTORY
+								INVENTARIO
 							</div>
 						</a>
-					</li>
-					<li class="full-width divider-menu-h"></li>
-					<li class="full-width">
-						<a href="#!" class="full-width btn-subMenu">
-							<div class="navLateral-body-cl">
-								<i class="zmdi zmdi-wrench"></i>
-							</div>
-							<div class="navLateral-body-cr">
-								SETTINGS
-							</div>
-							<span class="zmdi zmdi-chevron-left"></span>
-						</a>
-						<ul class="full-width menu-principal sub-menu-options">
-							<li class="full-width">
-								<a href="#!" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-widgets"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										OPTION
-									</div>
-								</a>
-							</li>
-							<li class="full-width">
-								<a href="#!" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-widgets"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										OPTION
-									</div>
-								</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</nav>
@@ -332,116 +241,74 @@
 			</div>
 		</div>
 		<section class="full-width text-center" style="padding: 40px 0;">
-			<h3 class="text-center tittles">RESPONSIVE TILES</h3>
+			<h3 class="text-center tittles">MENÚ</h3>
 			<!-- Tiles -->
 			<article class="full-width tile">
 				<div class="tile-text">
 					<span class="text-condensedLight">
+						1<br>
+						<small>Categía</small>
+					</span>
+					<img 
+						src="img/10934652_showcase_item_product_display_category_icon.png" 
+						alt="Imagen de referencia"
+						class="tile-icon"
+						style="height: 60px; width: auto;">
+				</div>
+				
+			</article>
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
 						2<br>
-						<small>Administrators</small>
+						<small>Marca</small>
 					</span>
+					<img 
+						src="img/1291777_price_price tag_pricing_product_icon.png" 
+						alt="Imagen de referencia"
+						class="tile-icon"
+						style="height: 60px; width: auto;">
 				</div>
-				<i class="zmdi zmdi-account tile-icon"></i>
 			</article>
 			<article class="full-width tile">
 				<div class="tile-text">
 					<span class="text-condensedLight">
-						71<br>
-						<small>Clients</small>
+						3<br>
+						<small>Producto</small>
 					</span>
+					<img 
+						src="img/52634_box_empty_product_shipment_icon.png" 
+						alt="Imagen de referencia"
+						class="tile-icon"
+						style="height: 60px; width: auto;">
 				</div>
-				<i class="zmdi zmdi-accounts tile-icon"></i>
 			</article>
 			<article class="full-width tile">
 				<div class="tile-text">
 					<span class="text-condensedLight">
-						7<br>
-						<small>Providers</small>
+						4<br>
+						<small>Inventario</small>
 					</span>
+					<img 
+						src="img/49590_boxes_customers_inventory_products_icon.png" 
+						alt="Imagen de referencia"
+						class="tile-icon"
+						style="height: 60px; width: auto;">
 				</div>
-				<i class="zmdi zmdi-truck tile-icon"></i>
 			</article>
 			<article class="full-width tile">
 				<div class="tile-text">
 					<span class="text-condensedLight">
-						9<br>
-						<small>Categories</small>
+						5<br>
+						<small>Inventario Detalle</small>
 					</span>
+					<img 
+						src="img/10934664_invoice_item_itemdescription_finance_document_icon.png" 
+						alt="Imagen de referencia"
+						class="tile-icon"
+						style="height: 60px; width: auto;">
 				</div>
-				<i class="zmdi zmdi-label tile-icon"></i>
 			</article>
-			<article class="full-width tile">
-				<div class="tile-text">
-					<span class="text-condensedLight">
-						121<br>
-						<small>Products</small>
-					</span>
-				</div>
-				<i class="zmdi zmdi-washing-machine tile-icon"></i>
-			</article>
-			<article class="full-width tile">
-				<div class="tile-text">
-					<span class="text-condensedLight">
-						47<br>
-						<small>Sales</small>
-					</span>
-				</div>
-				<i class="zmdi zmdi-shopping-cart tile-icon"></i>
-			</article>
-		</section>
-		<section class="full-width" style="margin: 30px 0;">
-			<h3 class="text-center tittles">RESPONSIVE TIMELINE</h3>
-			<!-- TimeLine -->
-			<div id="timeline-c" class="timeline-c">
-				<div class="timeline-c-box">
-	                <div class="timeline-c-box-icon bg-info">
-	                    <i class="zmdi zmdi-twitter"></i>
-	                </div>
-	                <div class="timeline-c-box-content">
-	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
-	                    <p class="text-center">
-	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
-	                    </p>
-	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>05-04-2016</span>
-	                </div>
-	            </div>
-				<div class="timeline-c-box">
-	                <div class="timeline-c-box-icon bg-success">
-	                    <i class="zmdi zmdi-whatsapp"></i>
-	                </div>
-	                <div class="timeline-c-box-content">
-	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
-	                    <p class="text-center">
-	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
-	                    </p>
-	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>06-04-2016</span>
-	                </div>
-	            </div>
-	            <div class="timeline-c-box">
-	                <div class="timeline-c-box-icon bg-primary">
-	                    <i class="zmdi zmdi-facebook"></i>
-	                </div>
-	                <div class="timeline-c-box-content">
-	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
-	                    <p class="text-center">
-	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
-	                    </p>
-	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>07-04-2016</span>
-	                </div>
-	            </div>
-	            <div class="timeline-c-box">
-	                <div class="timeline-c-box-icon bg-danger">
-	                    <i class="zmdi zmdi-youtube"></i>
-	                </div>
-	                <div class="timeline-c-box-content">
-	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
-	                    <p class="text-center">
-	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
-	                    </p>
-	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>08-04-2016</span>
-	                </div>
-	            </div>
-			</div>
 		</section>
 	</section>
 </body>
